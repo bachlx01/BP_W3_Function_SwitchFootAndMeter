@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Excercise</title>
+
+</head>
+<body>
+<form action="">
+    Enter foot value:&nbsp &nbsp  <input type="text" oninput="footToMeter(this.value)">
+      to meter:&nbsp <span id="result1"></span> <br> <br>
+    Enter meter value:  <input type="text" oninput="meterToFoot(this.value)">
+     to foot: &nbsp <span id="result2"></span>
+</form>
+
+<script>
+function footToMeter (foot) {
+    let meter = foot*0.305;
+    document.getElementById('result1').innerText = meter;
+}
+function meterToFoot (meter) {
+    let foot = meter*3.279;
+    document.getElementById('result2').innerText = foot;
+}
+</script>
+</body>
+</html>
